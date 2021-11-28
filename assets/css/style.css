@@ -1,0 +1,392 @@
+/* Navbar */
+#navbar {
+    background: white;
+    color: #333333;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: 'Pavanam', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.navbar-item:hover {
+    font-family: 'Pavanam', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Background circles */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.outer-LB {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    height: 9rem;
+    width: 9rem;
+    opacity: 60%;
+}
+
+.outer-LB-2 {
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    height: 9rem;
+    width: 9rem;
+    opacity: 60%;
+}
+
+.inner1-LB, .inner2-LB, .inner1-LB-2, .inner2-LB-2 {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #87B7CB;
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.outerGB {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    height: 12rem;
+    width: 12rem;
+    opacity: 60%;
+}
+
+.outerGB-2 {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    height: 12rem;
+    width: 12rem;
+    opacity: 60%;
+}
+
+.inner1GB, .inner2GB, .inner1GB-2, .inner2GB-2 {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #BECAD7;
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.outerG {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 6rem;
+    width: 6rem;
+    opacity: 60%;
+}
+
+.outerG-2 {
+    position: absolute;
+    top: 55%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    height: 7rem;
+    width: 7rem;
+    opacity: 60%;
+}
+
+.inner1G, .inner2G, .inner1G-2, .inner2G-2 {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #BFC398;
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.inner1-LB, .inner1GB, .inner1G, .inner1-LB-2, .inner1GB-2, .inner1G-2 {
+    animation: inner1 7s infinite ease-in-out backwards;
+}
+
+.inner2-LB, .inner2GB, .inner2G, .inner2-LB-2, .inner2GB-2, .inner2G-2 {
+    animation: inner2 7s infinite ease-in-out backwards;
+}
+
+@keyframes inner1 {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes inner2 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* About page */
+#about-circle {
+    width: 39%;
+    border-radius: 50%;
+    background: #93c4da;
+    line-height: 1.2;
+    position: relative;
+    top: 100px;
+    left: 450px;
+  }
+   
+  #about-circle::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+#about-title, h2 {
+    font-family: 'Playball', serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.circle-txt {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 40px;
+    font-size: 23px;
+    font-family: 'Pavanam', sans-serif;
+    font-weight:lighter;
+    text-decoration: none;
+  }
+
+/* Home page */
+.welcome-name-image {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 50px; */
+    padding-top: 70px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    width: 1000px; 
+}
+
+.welcome-name-col {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    row-gap: 0px;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Pavanam', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    margin:auto;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+#welcome {
+    font-family: 'Pavanam', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: lighter;
+    color: #333333; 
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+#name {
+    font-family: 'Pavanam', sans-serif;
+    font-size: 70px;
+    text-decoration: none;
+    text-align: center;
+    color: #82a5b3; 
+    margin-left: 50px;
+}
+
+#cover-image {
+    width: 56%;
+    text-align: left;
+    /* padding-bottom: 20px; */
+    border-radius: 50%;
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+
+/* Contact page */
+#contact-circle {
+    width: 40%;
+    border-radius: 50%;
+    background: #BFC398;
+    line-height: 1.2;
+    position: absolute;
+    top: 100px;
+    left: 450px;
+  }
+   
+  #contact-circle::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+/* Projects page */
+  #projects-title {
+    font-family: 'Playball', serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: #333333; 
+    /* position: absolute;
+    top: 100px; */
+    padding-top: 90px;
+    padding-bottom: 40px;
+    /* margin-top: 100px; */
+  }
+
+/* Overall carousel dimensions */
+
+#carousel,.carousel-image, #ai4sight, #gitlet, #scheme {
+  width: 550px;
+  height: 550px;
+}
+
+#ai4sight:hover, #gitlet:hover, #scheme:hover {
+    cursor: pointer;
+}
+
+/* Carousel frame setup */
+
+#carousel {
+  position: relative;
+  left: 31%;
+  /* border: 3px solid blue; */
+  /* Part 3.1: Hide stuff that overflows the box */
+  overflow: hidden;
+}
+
+/* Images */
+
+#carousel-image-row {
+  /* Part 1.2: Make images appear in a row */
+  display: flex;
+  flex-direction: row;
+  /* Part 1.3: What kind of positioning? */
+  position: absolute;
+  /* Part 3.2: Add transition */
+  transition: 0.5s left;
+}
+
+.carousel-image img {
+  height: 100%;
+  width: auto;
+}
+
+/* Controls */
+
+.hidden {
+  visibility: hidden;
+}
+
+/* Part 4: optional button styling */
+
+#carousel-controls {
+  /* vertically center */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* spacing between the two buttons */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  /* appear in front of images */
+  z-index: 1;
+}
+
+#button-next,
+#button-previous {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 50px;
+  height: 50px;
+}
+
+
+  /* Resume page */
+#resume-header {
+    padding-top: 60px;
+    margin-bottom: 30px;
+    font-family: 'Playball', serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #333333; 
+}
+
+#email, #linkedin, #facebook, #instagram {
+    cursor: pointer;
+}
+
+.social-media-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 370px;
+    /* left: 200px; */
+    column-gap: 35px;
+}
+
+
