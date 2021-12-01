@@ -65,29 +65,6 @@ function checkControls() {
 	}
 }
 
-window.onload = function() {
-    var ai4sight = document.getElementById("ai4sight");
-    ai4sight.onclick = goToSite;
-
-    var gitlet = document.getElementById("gitlet");
-    gitlet.onclick = goToGitHub;
-
-    var scheme = document.getElementById("scheme");
-    scheme.onclick = goToGitHub;
-
-    var email = document.getElementById("email");
-    email.onclick = goToGmail;
-
-    var linkedin = document.getElementById("linkedin");
-    linkedin.onclick = goToLinkedin;
-
-    var facebook = document.getElementById("facebook");
-    facebook.onclick = goToFacebook;
-
-    var instagram = document.getElementById("instagram");
-    instagram.onclick = goToInstagram;
-}
-
 function goToGmail() {
     window.open("mailto:tiasjain@gmail.com");
 }
@@ -111,3 +88,26 @@ function goToGitHub() {
 function goToSite() {
     window.open("https://www.ai4sight.org/");
 }
+
+window.onload = function() {
+    var ai4sight = document.getElementById("ai4sight");
+    ai4sight.onclick = goToSite;
+
+    var gitlet = document.getElementById("gitlet");
+    gitlet.onclick = goToGitHub;
+
+    var scheme = document.getElementById("scheme");
+    scheme.onclick = goToGitHub;
+}
+
+let email = document.getElementById("email");
+email.onclick = goToGmail;
+
+let linkedin = document.getElementById("linkedin");
+linkedin.onclick = goToLinkedin;
+
+let facebook = document.getElementById("facebook");
+facebook.onclick = goToFacebook;
+
+let instagram = document.getElementById("instagram");
+instagram.onclick = goToInstagram;
