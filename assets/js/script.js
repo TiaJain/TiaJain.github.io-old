@@ -74,9 +74,7 @@ window.onload = function() {
 
     var scheme = document.getElementById("scheme");
     scheme.onclick = goToGitHub;
-}
 
-window.onload = function() {
     var email = document.getElementById("email");
     email.onclick = goToGmail;
 
